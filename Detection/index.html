@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Link Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+
+
+  
+<div class="container">
+    <h1>Phishing Link Detector</h1>
+    <input type="text" id="urlInput" class="input-url" placeholder="Enter URL">
+    <button class="btn-check" onclick="checkPhishing()">Check Link</button>
+</div>
+
+<!-- Modal Structure -->
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modalResult" class="modal-result"></div>
+    </div>
+</div>
+<script src="/static/phishingUrls.js"></script>
+<script src="/static/script.js"></script>
+</body>
+</html>
